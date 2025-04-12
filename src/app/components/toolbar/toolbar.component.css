@@ -1,0 +1,7 @@
+.mat-toolbar{
+    background: #004f4f;
+    color:#0dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
