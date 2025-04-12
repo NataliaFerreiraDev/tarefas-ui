@@ -1,7 +1,14 @@
-.mat-toolbar{
+.custom-toolbar {
     background: #004f4f;
-    color:#0dd;
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 0 16px;
+    gap: 16px;
 }
+
+.title {
+    margin: 0;
+    padding-left: 12px;
+    font-size: 24px;
+}
+

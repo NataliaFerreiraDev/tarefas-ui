@@ -1,0 +1,57 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+app-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content-area {
+    padding: 16px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.sidenav {
+    width: 13%;
+    background-color: #004f4f;
+    padding-top: 8px;
+}
+
+app-footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1;
+}
+
+.nav-content mat-icon {
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+a.mat-list-item {
+    text-decoration: none;
+}
+
+::ng-deep mat-sidenav {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
