@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterModule } from '@angular/router';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { FooterComponent } from "./components/footer/footer.component";
 import { MatListModule } from '@angular/material/list';
@@ -11,6 +11,7 @@ import { MatIcon } from '@angular/material/icon';
   standalone: true,
   imports: [
     RouterOutlet,
+    RouterModule,
     ToolbarComponent,
     MatIcon,
     MatSidenavModule,

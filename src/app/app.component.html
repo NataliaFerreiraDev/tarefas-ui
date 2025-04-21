@@ -6,13 +6,23 @@
 
         <mat-sidenav #sidenav mode="side" class="sidenav">
             <mat-nav-list>
-                <a mat-list-item routerLink="/" (click)="sidenav.close()">
+                <a mat-list-item [routerLink]="['/']" (click)="sidenav.close()">
                     <span class="nav-content">
                         <mat-icon>home</mat-icon>
                         <span>Home</span>
                     </span>
                 </a>
             </mat-nav-list>
+
+            <mat-nav-list>
+                <a mat-list-item [routerLink]="['/categoria']" (click)="sidenav.close()">
+                    <span class="nav-content">
+                        <mat-icon>dataset</mat-icon>
+                        <span>Categoria</span>
+                    </span>
+                </a>
+            </mat-nav-list>
+
         </mat-sidenav>
 
         <mat-sidenav-content>
